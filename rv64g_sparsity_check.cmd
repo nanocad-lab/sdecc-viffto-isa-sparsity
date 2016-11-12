@@ -13,7 +13,7 @@
 #$ -j y
 #  The following items pertain to the user program
 #  user program    = /u/project/puneet/mgottsch/eccgrp-riscv-isa-sparsity/rv64g_sparsity_check.m
-#  arguments       = -m -I common
+#  arguments       = -m
 #  program input   = Specified by user program
 #  program output  = Specified by user program
 #  Resources requested
@@ -62,9 +62,9 @@
   setenv LM_LICENSE_FILE /u/local/licenses/license.matlab
   set path = ( $path /sbin )
 #
-  echo mcc rv64g_sparsity_check.m -m -I common
+  echo mcc rv64g_sparsity_check.m -m
 requeue:
-  /u/local/apps/matlab/8.6/bin/mcc rv64g_sparsity_check.m -m -I common
+  /u/local/apps/matlab/8.6/bin/mcc rv64g_sparsity_check.m -m
   set rc = $status
 #
 # if( `grep -c 'Maximum number of users' /u/project/puneet/mgottsch/eccgrp-riscv-isa-sparsity/rv64g_sparsity_check.joblog.$JOB_ID` > 0 || `grep -c 'License checkout failed' /u/project/puneet/mgottsch/eccgrp-riscv-isa-sparsity/rv64g_sparsity_check.joblog.$JOB_ID` > 0 ) then

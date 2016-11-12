@@ -1,0 +1,8 @@
+*.txt
+mccExcludedFiles.log
+requiredMCRProducts.txt
+readme.txt
+*joblog*
+*.output*
+*.mat
+run*.sh

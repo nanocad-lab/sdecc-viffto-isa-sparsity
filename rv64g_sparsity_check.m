@@ -1,9 +1,5 @@
 function [fraction_illegal_inst] = rv64g_sparsity_check()
 
-if ~isdeployed
-    addpath ecc common rv64g % Add sub-folders to MATLAB search paths for calling other functions we wrote
-end
-
 % Try all possible 32-bit patterns
 legal_count = 0;
 for i=0:2^32-1
