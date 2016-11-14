@@ -24,6 +24,6 @@ parfor i=1:n_threads
 end
 
 total_legal_count = sum(legal_count);
-fraction_illegal_inst = total_legal_count/(2^32)
+fraction_legal_inst = total_legal_count/(2^32)
 
 end
