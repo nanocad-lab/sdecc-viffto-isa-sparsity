@@ -1,4 +1,6 @@
 function [fraction_illegal_inst] = alpha_sparsity_check(n_threads)
+% Author: Mark Gottscho
+% Email: mgottscho@ucla.edu
 
 n_threads = str2num(n_threads)
 %% Set up parallel computing

@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+# Author: Mark Gottscho
+# Email: mgottscho@ucla.edu
 
 BINARY_LOCATION=$PWD
 NUM_THREADS=$1

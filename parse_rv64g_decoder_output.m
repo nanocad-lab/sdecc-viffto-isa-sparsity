@@ -18,6 +18,9 @@ function [disassembly, legal, mnemonic, codec, rd, rs1, rs2, rs3, imm, arg] = pa
 %   rs3 -- String: Source register 3, if any, otherwise 'NA'
 %   imm -- String: Immediate value, if any, otherwise 'NA'
 %   arg -- String: Arg value, if any, otherwise 'NA'
+%
+% Author: Mark Gottscho
+% Email: mgottscho@ucla.edu
 
 [status, decoderOutput] = MyRv64gDecoder(message_hex); % NOTE: this will only work if the decoder MEX file is properly compiled for your platform!
     
